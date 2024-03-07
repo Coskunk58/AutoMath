@@ -1,6 +1,7 @@
 <html>
 <head>
     <title>KAWAİ Geschäft</title>
+	<script src="js/slider-min.js" type="text/javascript">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -50,63 +51,12 @@
             bottom: 0;
             width: 100%;
         }
-	    #slider {
-    font: 19px sans-serif;
-    margin: 0px auto;
-    position: relative;
-    width: 600px;
-    height: 300px;
-    overflow: hidden;
-  }
-
-  #kontrol {
-    position: absolute;
-    right: 0px;
-    bottom: 10px;
-  }
-
-  #kontrol a {
-    color: #ffffff;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 10px;
-    text-decoration: none;
-  }
+       slider {
+         width:1366px;
+    
+           } 
     </style>
 
-	<script>
-"use strict";
-  var _slayt = document.getElementsByClassName("slayt");
-  var slaytSayisi = _slayt.length;
-  var slaytNo = 0;
-  var i = 0;
-
-  slaytGoster(slaytNo);
-
-  function sonrakiSlayt() {
-    slaytNo++;
-    slaytGoster(slaytNo);
-  }
-
-  function oncekiSlayt() {
-    slaytNo--;
-    slaytGoster(slaytNo);
-  }
-
-  function slaytGoster(slaytNumarasi) {
-    slaytNo = slaytNumarasi;
-
-    if (slaytNumarasi >= slaytSayisi) slaytNo = 0;
-
-    if (slaytNumarasi < 0) slaytNo = slaytSayisi - 1;
-
-    for (i = 0; i < slaytSayisi; i++) {
-      _slayt[i].style.display = "none";
-    }
-
-    _slayt[slaytNo].style.display = "block";
-
-  }
-</script>
 </head>
 <body>
 
@@ -125,19 +75,13 @@
 
    
 <section>
-
 <div id="slider">
-  <div class="slayt"><img src="manset-fotografi.jpg" alt="Manşet Fotoğrafı"></div>
-  <div class="slayt"><img src="Figuren.jpg" alt="Figuren"></div>
-  <div class="slayt"><img src="Manga.jpg" alt="Manga"></div>
-  <div class="slayt"><img src="Taschen.jpg" alt="Taschen"></div>
-  <div class="slayt"><img src="Kleidung.jpg" alt="Kleidung"> </div>
-  <div id="kontrol">
-    <a href="javascript:oncekiSlayt()">Önceki</a>
-    <a href="javascript:sonrakiSlayt()">Sonraki</a>
-  </div>
+        <img src="manset-fotografi.jpg" alt="Manşet Fotoğrafı">
+	<img src="Figuren.jpg" alt="Figuren">
+        <img src="Manga.jpg" alt="Manga">
+	<img src="Taschen.jpg" alt="Taschen">    
+	<img src="Kleidung.jpg" alt="Kleidung"> 
 </div>
-
         <!-- Hoşgeldiniz yazısı -->
         <h2>Willkommen im KAWAİ Geschäft!</h2>
         <p>Willkommen, wenn Sie hier auf „Anime mitbringen“ klicken, wird das Anime-Essen „DIREKT VOR IHRER TÜR“ zu Ihnen nach Hause geliefert.
